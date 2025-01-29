@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="icon" type="image/png" href="/assests/images/main icon/car.png">
+      <title>Auto World</title>
+   </head>
+   <body>
+      <!-- navbar  -->
+      <nav class="navbar fixed-top navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="assests/images/logo/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon text-light">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path>
+                  </svg>
+               </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                     Brands
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                        <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+                        <li><a class="dropdown-item" href="suzuki.html">Suzuki</a></li>
+                        <li><a class="dropdown-item" href="ford.html">Ford</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="waranty.html">Warranty</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="bank.html">Bank Schemes</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="compare.html">Compare Car</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="assests/images/honda/honda banner.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="assests/images/toyota/toyota banner (2).jpg " class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="assests/images/banner/suzuki banner ...avif" class="d-block w-100" alt="...">
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- finding cars -->
+      <section class="find-car-section">
+         <div class="find-car-div">
+            <h2 class="find-car-heading">Find Your Dream Car</h2>
+            <label for="car1" id="find-select-car">Select Car 1</label>
+            <select class="form-control" id="findingcar">
+               <option value="" selected disabled class="car-option">Find a Car</option>
+               <option value="toyota-grande" class="car-option">Toyota Grande</option>
+               <option value="toyota-fortuner" class="car-option">Toyota Fortuner</option>
+               <option value="toyota-hilux" class="car-option">Toyota Hilux</option>
+               <option value="honda-city" class="car-option">Honda City</option>
+               <option value="honda-civic" class="car-option">Honda Civic</option>
+               <option value="honda-grace" class="car-option">Honda Grace</option>
+               <option value="suzuki-swift" class="car-option">Suzuki Swift</option>
+               <option value="suzuki-breeza" class="car-option">Suzuki Breeza</option>
+               <option value="suzuki-alto" class="car-option">Suzuki Alto</option>
+            </select>
+         </div>
+         <div class="text-center mt-4">
+            <button class="btn" id="FindButton">Find Car</button>
+         </div>
+      </section>
+      <!-- feature cars short info -->
+      <section class="featured-cars-section">
+         <div class="featured-cars-main-heading-div">
+            <h1 class="featured-cars-main-heading">Dubai's Leading Luxury Car Dealer</h1>
+         </div>
+         <div class="row" id="featured-cars-section-row">
+            <div class="col-6">
+               <h1 class="featured-cars-heading">Featured Cars Hot Deals in UAE</h1>
+               <span class="featured-cars-span">Buy your car for the best price</span>
+               <p class="featured-cars-description">Auto World Luxury Cars is a car dealer in Dubai that provides the best car
+                  deals in the Dubai automotive market from leading brand. You’ll find various luxury cars sourced from globally
+                  renowned, and dependable brands, celebrated for their luxury and reliability. Searching for cars online has
+                  never been this easy.
+               </p>
+            </div>
+            <div class="col-6">
+               <img src="assests/images/banner/fc 22.jpg" alt="" class="featured-cars-img">
+            </div>
+         </div>
+      </section>
+      <!-- cars compare -->
+      <section class="cars-compare-section">
+         <div class="cars-compare-div">
+            <h1 class="cars-compare-main-heading">WANT TO COMPARE CARS?</h1>
+            <h4 class="cars-compare-sub-heading">Here you can compare your car</h4>
+            <a class="btn btn-warning" href="compare.html" role="button" id="compare-cars-btn">Compare Cars</a>
+         </div>
+      </section>
+      <!-- toyota cars card -->
+      <!-- ||||||||||||TOYOTA GRANDE START||||||||||||||| -->
+      <section class="car-cards">
+         <div class="car-cards-mainheading-div">
+            <h1 class="car-cards-mainheading">OUR POPULAR CARS</h1>
+         </div>
+         <div class="row" id="car-cards-row">
+            <div class="col-md-4">
+               <div class="card" id="toyota-grande">
+                  <img src="assests/images/toyota/grande.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Toyota Grande</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Toyota Grande</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/toyota/grande page.jpg" alt="" class="w-100">
+                        <h1>Toyota Grande</h1>
+                        <p>The Toyota Grande is a mid-size luxury car that offers a perfect blend of style, comfort, and
+                           performance.
+                        </p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Spacious interior with premium leather seats</li>
+                           <li>Advanced infotainment system with touchscreen display</li>
+                           <li>Powerful 2.5L engine with smooth transmission</li>
+                           <li>Advanced safety features, including lane departure warning and blind spot monitoring</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>The Toyota Grande boasts a sleek and sophisticated design, with a bold front grille, LED headlights,
+                           and a stylish rear bumper.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>The Toyota Grande delivers a smooth and responsive driving experience, with a powerful engine and
+                           precise handling.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>The interior of the Toyota Grande is designed for comfort and convenience, with premium leather seats,
+                           ample legroom, and advanced technology features.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>2.5L 4-Cylinder</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>6-Speed Automatic</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>Front-Wheel Drive</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>5 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ||||||||||||||||||||\\TOYOTA GRANDE START||||||||||||||| -->
+            <!-- ||||||||||||||||||||\\TOYOTA FORTUNER START||||||||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/toyota/toyota-fortuner-render-4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title" id="toyota-fortuner">Toyota Fortuner</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal2" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Toyota Fortuner</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/toyota/toyota-fortuner-render-4.jpg" alt="" class="w-100">
+                        <h1>Toyota Fortuner</h1>
+                        <p>The Toyota Fortuner is a rugged and reliable mid-size SUV that's perfect for off-road adventures and
+                           daily driving.
+                        </p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Powerful 2.7L petrol or 2.4L diesel engine</li>
+                           <li>Advanced 4x4 system with low-range gearing</li>
+                           <li>Spacious interior with premium leather seats</li>
+                           <li>Advanced safety features, including 7 airbags and electronic stability control</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>The Toyota Fortuner boasts a bold and rugged design, with a prominent front grille, LED headlights, and
+                           a stylish rear bumper.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>The Toyota Fortuner delivers a smooth and responsive driving experience, with a powerful engine and
+                           precise handling.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>The interior of the Toyota Fortuner is designed for comfort and convenience, with premium leather
+                           seats, ample legroom, and advanced technology features.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>2.7L Petrol or 2.4L Diesel</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>6-Speed Automatic or 6-Speed Manual</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>4x4</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>7 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- |||||||||||||||||TOYOTA FORTUNER END||||||||||||||||||||| -->
+            <!-- ||||||||||TOYOTA HILUX START|||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/toyota/hillix.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title" id="toyota-hilux">Toyota Hilux</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal3" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Toyota Hilux</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <img src="assests/images/toyota/hillix.jpg" alt="" class="w-100">
+                     <h1>Toyota Hilux</h1>
+                     <p>Toyota Hilux ek powerful aur reliable pickup truck hai jo aapke har kaam ke liye taiyaar hai.</p>
+                     <h2>Key Features:</h2>
+                     <ul>
+                        <li>Powerful 2.0L petrol ya 2.4L diesel engine</li>
+                        <li>Advanced 4x4 system ke saath low-range gearing</li>
+                        <li>Spacious cabin ke saath premium features</li>
+                        <li>Advanced safety features, jaise 7 airbags aur electronic stability control</li>
+                     </ul>
+                     <h2>Design:</h2>
+                     <p>Toyota Hilux ka design bold aur rugged hai, jisme prominent front grille, LED headlights, aur stylish
+                        rear bumper hai.
+                     </p>
+                     <h2>Performance:</h2>
+                     <p>Toyota Hilux driving experience smooth aur responsive hai, jisme powerful engine aur precise handling
+                        hai.
+                     </p>
+                     <h2>Interior:</h2>
+                     <p>Toyota Hilux ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium features,
+                        ample legroom, aur advanced technology hai.
+                     </p>
+                     <h2>Specifications:</h2>
+                     <table>
+                        <tr>
+                           <th>Engine</th>
+                           <td>2.0L Petrol ya 2.4L Diesel</td>
+                        </tr>
+                        <tr>
+                           <th>Transmission</th>
+                           <td>5-Speed Manual ya 6-Speed Automatic</td>
+                        </tr>
+                        <tr>
+                           <th>Drive Type</th>
+                           <td>4x4</td>
+                        </tr>
+                        <tr>
+                           <th>Seating Capacity</th>
+                           <td>5 Passengers</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ||||||||||TOYOTA HILUX END|||||||||| -->
+      <!-- honda-cars-card -->
+      <!-- ||||||||||HONDA CITY START|||||||||| -->
+      <section class="car-cards">
+         <div class="row" id="car-cards-row">
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/honda/city.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title" id="honda-city">Honda City</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal5" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Honda City</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/honda/city.jpg" alt="" class="w-100">
+                        <h1>Honda City</h1>
+                        <p>Honda City ek stylish aur feature-packed sedan hai jo aapke har kaam ke liye taiyaar hai.</p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Powerful 1.5L i-VTEC petrol engine</li>
+                           <li>Advanced CVT transmission ke saath paddle shifters</li>
+                           <li>Spacious interior ke saath premium leather seats</li>
+                           <li>Advanced safety features, jaise 6 airbags aur electronic stability control</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>Honda City ka design sleek aur modern hai, jisme prominent front grille, LED headlights, aur stylish
+                           rear bumper hai.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>Honda City driving experience smooth aur responsive hai, jisme powerful engine aur precise handling
+                           hai.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>Honda City ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium features,
+                           ample legroom, aur advanced technology hai.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>1.5L i-VTEC Petrol</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>CVT with Paddle Shifters</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>Front-Wheel Drive</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>5 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ||||||||||HONDA CITY END|||||||||| -->
+            <!-- ||||||||||HONDA CIVIC START|||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/honda/civic.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body" id="honda-civic">
+                     <h5 class="card-title">Honda Civic</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal4" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details</a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Honda Civic</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/honda/civic.jpeg" alt="" class="w-100">
+                        <h1>Honda Civic</h1>
+                        <p>Honda Civic ek stylish aur performance-packed sedan hai jo aapke har kaam ke liye taiyaar hai.</p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Powerful 1.8L i-VTEC petrol engine</li>
+                           <li>Advanced CVT transmission ke saath paddle shifters</li>
+                           <li>Spacious interior ke saath premium leather seats</li>
+                           <li>Advanced safety features, jaise 6 airbags aur electronic stability control</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>Honda Civic ka design sleek aur modern hai, jisme prominent front grille, LED headlights, aur stylish
+                           rear bumper hai.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>Honda Civic driving experience smooth aur responsive hai, jisme powerful engine aur precise handling
+                           hai.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>Honda Civic ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium features,
+                           ample legroom, aur advanced technology hai.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>1.8L i-VTEC Petrol</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>CVT with Paddle Shifters</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>Front-Wheel Drive</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>5 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ||||||||||HONDA CIVIC END|||||||||| -->
+            <!-- ||||||||||HONDA GRACE START||||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/honda/grace.jpg" class="card-img-top" alt="...">
+                  <div class="card-body" id="honda-grace">
+                     <h5 class="card-title">Honda Grace</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal6" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Honda Graca</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <img src="assests/images/honda/grace.jpg" alt="" class="w-100">
+                     <h1>Honda Grace</h1>
+                     <p>Honda Grace ek stylish aur feature-packed sedan hai jo aapke har kaam ke liye taiyaar hai.</p>
+                     <h2>Key Features:</h2>
+                     <ul>
+                        <li>Powerful 1.5L i-VTEC petrol engine</li>
+                        <li>Advanced CVT transmission ke saath paddle shifters</li>
+                        <li>Spacious interior ke saath premium leather seats</li>
+                        <li>Advanced safety features, jaise 6 airbags aur electronic stability control</li>
+                     </ul>
+                     <h2>Design:</h2>
+                     <p>Honda Grace ka design sleek aur modern hai, jisme prominent front grille, LED headlights, aur stylish
+                        rear bumper hai.
+                     </p>
+                     <h2>Performance:</h2>
+                     <p>Honda Grace driving experience smooth aur responsive hai, jisme powerful engine aur precise handling hai.
+                     </p>
+                     <h2>Interior:</h2>
+                     <p>Honda Grace ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium features,
+                        ample legroom, aur advanced technology hai.
+                     </p>
+                     <h2>Specifications:</h2>
+                     <table>
+                        <tr>
+                           <th>Engine</th>
+                           <td>1.5L i-VTEC Petrol</td>
+                        </tr>
+                        <tr>
+                           <th>Transmission</th>
+                           <td>CVT with Paddle Shifters</td>
+                        </tr>
+                        <tr>
+                           <th>Drive Type</th>
+                           <td>Front-Wheel Drive</td>
+                        </tr>
+                        <tr>
+                           <th>Seating Capacity</th>
+                           <td>5 Passengers</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ||||||||||||||||HONDA CIVIC END|||||||||||||| -->
+      </section>
+      <!-- suzuki-cars-cards -->
+      <!-- ||||||||||||||||||||SUZUKI SWIFT START|||||||||||||||| -->
+      <section class="car-cards">
+         <div class="row" id="car-cards-row">
+            <div class="col-md-4">
+               <div class="card" id="suzuki-swift">
+                  <img src="assests/images/suzuki/swift.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">Suzuki Swift</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal7" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Suzuki Swift</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/suzuki/swift.jpg" alt="" class="w-100">
+                        <h1>Suzuki Swift</h1>
+                        <p>Suzuki Swift ek stylish aur feature-packed hatchback hai jo aapke har kaam ke liye taiyaar hai.</p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Powerful 1.2L K-Series petrol engine</li>
+                           <li>Advanced 5-speed manual aur AMT transmission</li>
+                           <li>Spacious interior ke saath premium fabric seats</li>
+                           <li>Advanced safety features, jaise dual airbags aur ABS</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>Maruti Suzuki Swift ka design sleek aur modern hai, jisme prominent front grille, halogen headlights,
+                           aur stylish rear bumper hai.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>Maruti Suzuki Swift driving experience smooth aur responsive hai, jisme powerful engine aur precise
+                           handling hai.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>Maruti Suzuki Swift ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium
+                           features, ample legroom, aur advanced technology hai.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>1.2L K-Series Petrol</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>5-Speed Manual aur AMT</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>Front-Wheel Drive</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>5 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ||||||||||||||||||||||SUZUKI SWIFT END|||||||||||||||||||||| -->
+            <!-- |||||||||||||||||||||||SUZUKI BREEZA START||||||||||||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/suzuki/suzuki breeza.jpg" class="card-img-top" alt="...">
+                  <div class="card-body" id="suzuki-breeza">
+                     <h5 class="card-title">Suzuki Breeza</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal8" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Suzuki Breeza</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assests/images/suzuki/suzuki breeza.jpg" alt="" class="w-100">
+                        <h1>Maruti Suzuki Brezza</h1>
+                        <p>Maruti Suzuki Brezza ek stylish aur feature-packed compact SUV hai jo aapke har kaam ke liye taiyaar
+                           hai.
+                        </p>
+                        <h2>Key Features:</h2>
+                        <ul>
+                           <li>Powerful 1.5L K-Series petrol engine</li>
+                           <li>Advanced 5-speed manual aur 4-speed automatic transmission</li>
+                           <li>Spacious interior ke saath premium fabric seats</li>
+                           <li>Advanced safety features, jaise dual airbags, ABS, aur EBD</li>
+                        </ul>
+                        <h2>Design:</h2>
+                        <p>Maruti Suzuki Brezza ka design sleek aur modern hai, jisme prominent front grille, LED headlights, aur
+                           stylish rear bumper hai.
+                        </p>
+                        <h2>Performance:</h2>
+                        <p>Maruti Suzuki Brezza driving experience smooth aur responsive hai, jisme powerful engine aur precise
+                           handling hai.
+                        </p>
+                        <h2>Interior:</h2>
+                        <p>Maruti Suzuki Brezza ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium
+                           features, ample legroom, aur advanced technology hai.
+                        </p>
+                        <h2>Specifications:</h2>
+                        <table>
+                           <tr>
+                              <th>Engine</th>
+                              <td>1.5L K-Series Petrol</td>
+                           </tr>
+                           <tr>
+                              <th>Transmission</th>
+                              <td>5-Speed Manual aur 4-Speed Automatic</td>
+                           </tr>
+                           <tr>
+                              <th>Drive Type</th>
+                              <td>Front-Wheel Drive</td>
+                           </tr>
+                           <tr>
+                              <th>Seating Capacity</th>
+                              <td>5 Passengers</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- |||||||||||||||||||||||SUZUKI BREEZA END|||||||||||||||||||||||| -->
+            <!-- ||||||||||||||||SUZUKI ALTO START|||||||||||||||||||||||||| -->
+            <div class="col-md-4">
+               <div class="card">
+                  <img src="assests/images/suzuki/suzuki alto 2.webp" class="card-img-top" alt="...">
+                  <div class="card-body" id="suzuki-alto">
+                     <h5 class="card-title">Suzuki Alto</h5>
+                     <div class="speedometer-icon">
+                        <i class="bi bi-speedometer"></i>
+                        <div class="speedometer-no">43 km</div>
+                     </div>
+                     <div class="calendar-icon">
+                        <i class="bi bi-calendar"></i>
+                        <div class="calendar-no">2025</div>
+                     </div>
+                     <a href="#exampleModal9" data-bs-toggle="modal" class="btn btn-outline-warning btn-sm">
+                     View Details
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Suzuki Alto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <img src="assests/images/suzuki/suzuki alto 2.webp" alt="" class="w-100">
+                  <h1>Maruti Suzuki Alto</h1>
+                  <p>Maruti Suzuki Alto ek compact aur fuel-efficient hatchback hai jo aapke har kaam ke liye taiyaar hai.</p>
+                  <h2>Key Features:</h2>
+                  <ul>
+                     <li>Powerful 0.8L petrol engine</li>
+                     <li>Advanced 5-speed manual transmission</li>
+                     <li>Spacious interior ke saath comfortable seating</li>
+                     <li>Advanced safety features, jaise driver airbag aur ABS</li>
+                  </ul>
+                  <h2>Design:</h2>
+                  <p>Maruti Suzuki Alto ka design sleek aur modern hai, jisme prominent front grille, halogen headlights, aur
+                     stylish rear bumper hai.
+                  </p>
+                  <h2>Performance:</h2>
+                  <p>Maruti Suzuki Alto driving experience smooth aur responsive hai, jisme powerful engine aur precise
+                     handling hai.
+                  </p>
+                  <h2>Interior:</h2>
+                  <p>Maruti Suzuki Alto ka interior comfort aur convenience ke liye design kiya gaya hai, jisme premium
+                     features, ample legroom, aur advanced technology hai.
+                  </p>
+                  <h2>Specifications:</h2>
+                  <table>
+                     <tr>
+                        <th>Engine</th>
+                        <td>0.8L Petrol</td>
+                     </tr>
+                     <tr>
+                        <th>Transmission</th>
+                        <td>5-Speed Manual</td>
+                     </tr>
+                     <tr>
+                        <th>Drive Type</th>
+                        <td>Front-Wheel Drive</td>
+                     </tr>
+                     <tr>
+                        <th>Seating Capacity</th>
+                        <td>5 Passengers</td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasBottom"><a href="login.html" style="color: rgb(0, 0, 0);">Buy Now</a></button>
+               </div>
+            </div>
+         </div>
+         <!-- ||||||||||||||||||||SUZUKI ALTO END|||||||||||||||||||||| -->
+      </section>
+      <!-- cars are owned -->
+      <section class="featured-cars-section">
+         <div class="row" id="featured-cars-section-row">
+            <div class="col-6">
+               <img src="assests/images/banner/fc 22.jpg" alt="" class="featured-cars-img">
+            </div>
+            <div class="col-6">
+               <h1 class="featured-cars-heading">Cars Are Owned</h1>
+               <span class="featured-cars-span">Buy your car for the best price</span>
+               <p class="featured-cars-description">With our luxury car dealership owning all of our vehicles, we offer a wide
+                  range With our luxury car dealership owning all of our vehicles, we offer a wide range of VIP motor cars, new
+                  and pre-owned models.The cars in our car showroom are from the highest-quality luxury automobiles and extend
+                  to the most exclusive and rare supercars.Our main priority is to ensure our customers are delighted by our
+                  exceptional service
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- link section -->
+      <section class="link-section">
+         <h5 class="link-heading">Find us everywhere</h5>
+         <h2 class="link-subheading">Contact us or get to know more about our latest Luxury Car Inventory</h2>
+         <div class="container">
+            <div class="row justify-content-center">
+               <!-- facebook logo -->
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 text-center" id="logo">
+                  <img src="https://douradocars.com/wp-content/uploads/2024/04/facebook-3.png" width="150" height="150">
+                  <div>
+                     <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
+                        class="icon ion-social-facebook" id="fa-facebooks"></i></a>                     
+                     <h3 class="logo-name">Facebook</h3>
+                  </div>
+               </div>
+               <!-- linkedin logo -->
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 text-center" id="logo">
+                  <img src="https://douradocars.com/wp-content/uploads/2024/04/linkedin.png" width="150" height="150">
+                  <div>
+                     <a href="https://www.linkedin.com/"><i class="icon ion-social-linkedin" id="fa-linkedins"></i></a>
+                     <h3 class="logo-name">Linkedin</h3>
+                  </div>
+               </div>
+               <!-- twitter logo -->
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 text-center" id="logo">
+                  <img src="https://douradocars.com/wp-content/uploads/2024/04/twitter.png" width="150" height="150">
+                  <div>
+                     <a href="https://x.com/?lang=en"><i
+                        class="icon ion-social-twitter" id="fa-twitters"></i></a>                     
+                     <h3 class="logo-name">Twitter</h3>
+                  </div>
+               </div>
+               <!-- youtube logo -->
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 text-center" id="logo">
+                  <img src="https://douradocars.com/wp-content/uploads/2024/04/youtube.png" width="150" height="150">
+                  <div>
+                     <a href="https://www.youtube.com/"><i class="icon ion-social-youtube" id="fa-youtubes"></i></a>
+                     <h3 class="logo-name">Youtube</h3>
+                  </div>
+               </div>
+               <!-- insta logo -->
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 text-center" id="logo">
+                  <img src="https://douradocars.com/wp-content/uploads/2024/04/instagram.png" width="150" height="150">
+                  <div>
+                     <a href="https://www.instagram.com/"><i
+                        class="icon ion-social-instagram" id="fa-instagrams"></i>
+                     </a>                     
+                     <h3 class="logo-name">Instagram</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- footer section -->
+      <section class="footer-section">
+         <div class="footer-dark">
+            <footer>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6 item text">
+                        <img src="assests/images/logo/logo-removebg-preview.png" alt="">
+                        <p>Auto World Luxury Car is a trusted pre-owned luxury car dealer in Dubai.
+                           Discover your dream car among our collection of luxury cars, supercars, exotic cars, and hypercars.
+                           Within a short span of time, carved a name in the niche market of luxury cars,
+                           as the leading luxury car dealers in Dubai UAE.
+                        </p>
+                     </div>
+                     <div class="col item social">
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i
+                           class="icon ion-social-facebook"></i></a><a href="https://x.com/?lang=en"><i
+                           class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com/"><i
+                           class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/"><i
+                           class="icon ion-social-instagram"></i>
+                        </a>
+                        <p style="text-align: start; color: #7a7c7c;">Praesent sed lobortis mi. Suspendisse vel placerat ligula.
+                           Vivamus ac sem lacus. Ut vehicula rhoncus
+                           elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+                        </p>
+                     </div>
+                  </div>
+                  <p class="copyright">Company Name © 2025</p>
+                  <p class="phone"><span class="white">Registered Contact Number:</span>
+                     <a href="tel:+971547065448">+971547065448</a>
+                  </p>
+               </div>
+            </footer>
+         </div>
+      </section>
+
+      <script src="/js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

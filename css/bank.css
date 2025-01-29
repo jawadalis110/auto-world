@@ -1,0 +1,395 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(0, 0, 0);
+    color: #333;
+    /* padding: 20px; */
+  }
+   .navbar{
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    position: sticky;
+  }
+  .navbar-brand{
+    color: yellow;
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    text-decoration: solid;   
+  
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 10px ;
+    font-weight: bold;
+  
+  }
+  
+  .nav-link:hover{
+    color: rgb(220, 231, 62);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .nav-item:hover .dropdown-menu{
+    display: block;
+  
+  }
+  .dropdown-menu
+  {
+    display: none;
+    background-color: black;
+  }
+  .dropdown-item{
+    color: white;
+  }
+  
+  .dropdown-item:hover{
+    background-color: rgb(224, 224, 60);
+    color: black;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .bank-details {
+    background:  rgb(0, 0, 0);
+    margin-bottom: 20px;
+    padding: 20px;
+     border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .bank-details h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .bank-details ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .bank-details ul li {
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .bank-details h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .apply-now {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .apply-button {
+    display: inline-block;
+    background-color: white;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-button:hover {
+    background-color: rgb(224, 224, 60);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .loan-table thead {
+    background-color: rgb(224, 224, 60);
+    color: #222;
+  }
+  .loan-table tbody{
+    color: white;
+  }
+  
+  .loan-table th, .loan-table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .loan-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* .loan-table tr:hover {
+    background-color: rgb(224, 224, 60);
+  } */
+  
+  .loan-table th {
+    font-weight: bold;
+  }
+  
+
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #222;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Circular Icon */
+  .logo-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #8C4799, #532A66);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Inner Symbol */
+  .logo-icon .inner-symbol {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-icon .inner-symbol::after {
+    content: "ﷲ"; /* Arabic word for 'Allah' */
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C4799;
+  }
+
+  /* Text Section */
+  .logo-text {
+    text-align: left;
+  }
+
+  .logo-text h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #8C4799;
+    font-weight: bold;
+  }
+
+  .logo-text p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+  }
+
+  /* Decorative Line Below Text */
+  .logo-divider {
+    height: 3px;
+    background: #8C4799;
+    width: 80px;
+    margin: 8px 0 0 0;
+  }
+
+    /* .hbl-container {
+      text-align: center;
+    }  */
+
+    .hbl-logo {
+      display: inline-block;
+      background-color: #00754a; /* HBL's green color */
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .hbl-text {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #00754a;
+    }
+
+    .hbl-tagline {
+      font-size: 16px;
+      color: white;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+     /* .logo {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }  */
+
+    .icon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Orange Triangle */
+    .icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 80px solid #f47920;
+    }
+
+    /* Blue Inverted Triangle */
+    .icon::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 60px solid #003a6d;
+    }
+
+    .text {
+      margin-top: 10px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* .logo {
+      display: flex;
+      align-items: center;
+  }
+   */
+  .circle {
+      width: 60px;
+      height: 60px;
+      background-color: #003366; /* Example color, replace with Soneri Bank's colors */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+  }
+  
+  .inner-circle {
+      width: 40px;
+      height: 40px;
+      background-color: #FFCC00; /* Example color, replace with actual colors */
+      border-radius: 50%;
+  }
+  
+  .logo-text h1 {
+      font-size: 30px;
+      font-weight: bold;
+      color: white; /* Example color, replace with actual color */
+  }
+  
+ /* Mobile view (width <= 576px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container .logo-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loan-table {
+    font-size: 0.8rem;
+  }
+
+  .loan-table th,
+  .loan-table td {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .modal-footer button {
+    width: 100%;
+  }
+}

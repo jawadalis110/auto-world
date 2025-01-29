@@ -1,0 +1,429 @@
+body{
+    color: black;
+    background-color: black;
+}
+.navbar{
+    background-color: rgb(0, 0, 0);
+    
+}
+.navbar-brand{
+    color: yellow;
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    text-decoration: solid;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 10px ;
+    font-weight: bold;
+
+}
+
+.nav-link:hover{
+    color: rgb(220, 231, 62);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+
+}
+.dropdown-menu
+{
+    display: none;
+    background-color: black;
+}
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(224, 224, 60);
+    color: black;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-6 {
+    flex: 1; /* Make both columns take equal space */
+}
+.featured-cars-section{
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+}
+.featured-cars-heading{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.featured-cars-span{
+    color: rgb(220, 231, 62);
+}
+.featured-cars-description{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.featured-cars-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-6 {
+        width: 100%; /* Make both columns stack vertically */
+        text-align: center;
+    }
+
+    .featured-cars-heading {
+        font-size: 1.8rem;
+    }
+
+    .featured-cars-span {
+        font-size: 1rem;
+    }
+
+    .featured-cars-description {
+        font-size: 1.8rem;
+    }
+
+    .featured-cars-span {
+        font-size: 1rem;
+    }
+
+    .featured-cars-description {
+        font-size: 0.95rem;
+    }
+    .featured-cars-img {
+        /* Optional adjustments for tablet devices */
+        object-fit: contain; /* Use 'contain' if you want the entire image to be visible without cropping */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .featured-cars-heading {
+        font-size: 1.5rem;
+    }
+
+    .featured-cars-span {
+        font-size: 0.9rem;
+    }
+    featured-cars-description {
+        font-size: 0.85rem;
+    }
+    .featured-cars-img {
+        /* Further adjustments for mobile screens */
+        object-fit: contain; /* Prevent image cropping on small screens */
+}
+}
+.link-section{
+    background-color: black;
+    margin-top: 10px;
+}
+.link-heading{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(224, 224, 45);
+}
+.link-subheading{
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    text-decoration: solid;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    margin-top: 0px;
+    background-color: black;
+}
+#logo {
+    background: linear-gradient(to bottom, white, rgb(221, 194, 40)); /* Gradient from white to gold */
+    margin-right: 10px;
+    width: auto;
+    padding: 20px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+
+  }
+.fa-facebook {
+    background: #e7df64;
+    color: rgb(233, 238, 169);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .fa-linkedin{
+    background: #e7df64;
+    color: rgb(233, 238, 169);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .fa-twitter{
+    background: #e7df64;
+    color: rgb(233, 238, 169);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .fa-youtube{
+    background: #e7df64;
+    color: rgb(233, 238, 169);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .fa-instagram{
+    background: #e7df64;
+    color: rgb(233, 238, 169);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .logo-name-facebook , .logo-name-instagram{
+    font-size: 25px;
+    color: black;
+    margin-left: 95px;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 0px;
+
+  }
+  .logo-name-youtube , .logo-name-linkedin , .logo-name-twitter{
+    font-size: 25px;
+    color: black;
+    margin-left: 105px;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 0px;
+
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      width: 100%; /* Full width for small screens */
+    }
+
+    .logo img {
+      width: 70%; /* Slightly smaller image for better fit */
+    }
+
+    .logo-name {
+      font-size: 1rem;
+}
+}
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  p.copyright{
+    text-align: left !important;
+  }
+  .white{
+    color: white;
+  }
+  .phone a{
+    color: #7a7c7c;
+}
+@media (max-width:767px) {
+    p.copyright{
+        margin-top: 150px;
+        text-align: center !important;
+    }
+    .phone{
+        text-align: center;
+}
+}
+/* link sectrion */
+.link-section {
+  background-color: black;
+  text-align: center;
+  padding: 50px 20px;
+  }
+  .link-heading{
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(224, 224, 45);
+  }
+  .link-subheading{
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  text-decoration: solid;
+  text-align: center;
+  }
+  .col img {
+  width: 100%;
+  height: auto;
+  max-width: 150px; /* Adjust image width */
+  margin-bottom: 15px;
+  }
+  .col h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: black;
+  }
+  #logo {
+  background: linear-gradient(to bottom, white, rgb(221, 194, 40)); /* Gradient from white to gold */
+  margin-right: 10px;
+  padding: 20px;
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  }
+  #fa-facebooks, #fa-linkedins, #fa-twitters, #fa-youtubes, #fa-instagrams {
+  background-color: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+
+  }
+  .logo-name {
+  font-size: 25px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 0;
+  }
+  /* Make it responsive */
+  @media (max-width: 768px) {
+  .col {
+     max-width: 200px; /* Limit the size of each item */
+  }
+  }

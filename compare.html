@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/compare.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="icon" type="image/png" href="/assests/images/main icon/car.png">
+      <title>Auto World</title>
+   </head>
+   <body>
+      <!-- navbar  -->
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">
+           <img src="assests/images/logo/logo.png" alt="">
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-light">
+                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path>
+                 </svg>
+              </span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                    Brands
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                       <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+                       <li><a class="dropdown-item" href="suzuki.html">Suzuki</a></li>
+                       <li><a class="dropdown-item" href="ford.html">Ford</a></li>
+                    </ul>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="waranty.html">Warranty</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="bank.html">Bank Schemes</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="compare.html">Compare Car</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+
+      <div class="container mt-5">
+        <h1 class="main-page-heading">Compare Cars</h1>
+        <p class="main-paragraph">Here you can compare your car</p>
+    
+        <!-- Dropdowns for selecting cars -->
+        <div class="row">
+            <div class="col-md-4">
+                <label for="car1">Select Car 1</label>
+                <select class="form-control" id="car1">
+                    <option value="" selected disabled class="car-option">Select a Car</option>
+                    <option value="1" class="car-option">Toyota Grande</option>
+                    <option value="2" class="car-option">Toyota Fortuner</option>
+                    <option value="3" class="car-option">Toyota Hilux</option>
+                    <option value="4" class="car-option">Honda City</option>
+                    <option value="5" class="car-option">Honda Civic</option>
+                    <option value="6" class="car-option">Honda Grace</option>
+                    <option value="7" class="car-option">Suzuki Swift</option>
+                    <option value="8" class="car-option">Suzuki Breeza</option>
+                    <option value="9" class="car-option">Suzuki Alto</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="car2">Select Car 2</label>
+                <select class="form-control" id="car2">
+                    <option value="" selected disabled class="car-option">Select a Car</option>
+                    <option value="1" class="car-option">Toyota Grande</option>
+                    <option value="2" class="car-option">Toyota Fortuner</option>
+                    <option value="3" class="car-option">Toyota Hilux</option>
+                    <option value="4" class="car-option">Honda City</option>
+                    <option value="5" class="car-option">Honda Civic</option>
+                    <option value="6" class="car-option">Honda Grace</option>
+                    <option value="7" class="car-option">Suzuki Swift</option>
+                    <option value="8" class="car-option">Suzuki Breeza</option>
+                    <option value="9" class="car-option">Suzuki Alto</option>
+                </select>
+            </div>
+        </div>
+    
+        <!-- Compare Button -->
+        <div class="text-center mt-4">
+            <button class="btn" id="compareButton">Compare Selected Cars</button>
+        </div>
+    
+        <!-- Comparison Result -->
+        <div class="comparison-result">
+            <h3 class="text-center" id="car-comparion-heading">Car Comparison</h3>
+            <table class="table table-bordered comparison-table">
+                <thead>
+                    <tr>
+                        <th class="table-main-heading">ATTRIBUTE</th>
+                        <th class="table-main-heading">CAR 1</th>
+                        <th class="table-main-heading">CAR 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Model row -->
+                    <tr>
+                        <td class="table-heading">Model</td>
+                        <td id="car1-model" class="car-table-info"></td>
+                        <td id="car2-model" class="car-table-info"></td>
+                    </tr>
+                    <!-- Price row -->
+                    <tr>
+                        <td class="table-heading">Price</td>
+                        <td id="car1-price" class="car-table-info"></td>
+                        <td id="car2-price" class="car-table-info"></td>
+                    </tr>
+                    <!-- Year row -->
+                    <tr>
+                        <td class="table-heading">Year</td>
+                        <td id="car1-year" class="car-table-info"></td>
+                        <td id="car2-year" class="car-table-info"></td>
+                    </tr>
+                    <!-- Key Features row -->
+                    <tr>
+                        <td class="table-heading">Key Features</td>
+                        <td id="car1-keyfeatures" class="car-table-info"></td>
+                        <td id="car2-keyfeatures" class="car-table-info"></td>
+                    </tr>
+                    <!-- Design row -->
+                    <tr>
+                        <td class="table-heading">Design</td>
+                        <td id="car1-design" class="car-table-info"></td>
+                        <td id="car2-design" class="car-table-info"></td>
+                    </tr>
+                    <!-- Performance row -->
+                    <tr>
+                        <td class="table-heading">Performance</td>
+                        <td id="car1-performance" class="car-table-info"></td>
+                        <td id="car2-performance" class="car-table-info"></td>
+                    </tr>
+                    <!-- Interior row -->
+                    <tr>
+                        <td class="table-heading">Interior</td>
+                        <td id="car1-interior" class="car-table-info"></td>
+                        <td id="car2-interior" class="car-table-info"></td>
+                    </tr>
+                    <!-- Engine row -->
+                    <tr>
+                        <td class="table-heading">Engine</td>
+                        <td id="car1-engine" class="car-table-info"></td>
+                        <td id="car2-engine" class="car-table-info"></td>
+                    </tr>
+                    <!-- Transmission row -->
+                    <tr>
+                        <td class="table-heading">Transmission</td>
+                        <td id="car1-transmission" class="car-table-info"></td>
+                        <td id="car2-transmission" class="car-table-info"></td>
+                    </tr>
+                    <!-- Drivetype row -->
+                    <tr>
+                        <td class="table-heading">Drivetype</td>
+                        <td id="car1-drivetype" class="car-table-info"></td>
+                        <td id="car2-drivetype" class="car-table-info"></td>
+                    </tr>
+                    <!-- Seating Capacity row -->
+                    <tr>
+                        <td class="table-heading">Seating Capacity</td>
+                        <td id="car1-seatingcapacity" class="car-table-info"></td>
+                        <td id="car2-seatingcapacity" class="car-table-info"></td>
+                    </tr>
+                    <!-- Images row -->
+                    <tr>
+                        <td class="table-heading">Image</td>
+                        <td id="car1-image" class="car-table-info"></td>
+                        <td id="car2-image" class="car-table-info"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+      <script src="/js/comapre.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
